@@ -1,0 +1,17 @@
+<svg width="420" height="120" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Ada AI logo</title>
+  <desc id="logoDesc">Ada AI wordmark with stylized A icon and node network motif.</desc>
+  <defs>
+    <linearGradient id="adaGradient" x1="24" y1="15" x2="102" y2="97" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A7F5A"/>
+      <stop offset="1" stop-color="#F05D23"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="108" height="108" rx="24" fill="#F2F8F3"/>
+  <path d="M59.2 26L88 91H74.8L69.4 78.2H42.8L37.4 91H24L52.8 26H59.2ZM65.2 67.6L56 45.6L46.8 67.6H65.2Z" fill="url(#adaGradient)"/>
+  <circle cx="82" cy="29" r="4" fill="#0A7F5A"/>
+  <circle cx="94" cy="50" r="4" fill="#0A7F5A"/>
+  <circle cx="85" cy="74" r="4" fill="#0A7F5A"/>
+  <path d="M82 29L94 50L85 74" stroke="#0A7F5A" stroke-width="2" stroke-linecap="round"/>
+  <text x="132" y="72" fill="#122116" font-family="Syne, Manrope, sans-serif" font-size="56" font-weight="800" letter-spacing="0.5">Ada AI</text>
+</svg>
