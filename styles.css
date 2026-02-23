@@ -229,6 +229,7 @@ h3 {
 }
 
 .card-grid,
+.tech-grid,
 .portfolio-grid,
 .steps {
   display: grid;
@@ -255,6 +256,43 @@ h3 {
 .service-card p {
   margin: 0.6rem 0 0;
   color: var(--text-muted);
+}
+
+.tech-stack {
+  background: linear-gradient(180deg, #f8fcf8 0%, #edf5ef 100%);
+}
+
+.tech-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tech-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 20px rgba(18, 33, 22, 0.05);
+}
+
+.tech-card h3 {
+  margin-bottom: 0.8rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-list span {
+  display: inline-flex;
+  border: 1px solid #bfd2c4;
+  background: #f4faf6;
+  color: #214c37;
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  font-weight: 700;
+  font-size: 0.8rem;
 }
 
 .portfolio {
@@ -500,6 +538,7 @@ h3 {
 @media (max-width: 960px) {
   .hero-grid,
   .card-grid,
+  .tech-grid,
   .portfolio-grid,
   .steps {
     grid-template-columns: 1fr 1fr;
@@ -545,6 +584,7 @@ h3 {
   }
 
   .card-grid,
+  .tech-grid,
   .portfolio-grid,
   .steps {
     grid-template-columns: 1fr;
