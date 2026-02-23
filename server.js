@@ -110,6 +110,10 @@ function normalizeLead(payload) {
 app.use(express.json({ limit: '200kb' }));
 app.use(express.static(__dirname));
 
+app.get('/', (_req, res) => {
+  return res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.post('/api/leads', async (req, res) => {
   const lead = normalizeLead(req.body || {});
 
@@ -142,6 +146,13 @@ app.get('/api/leads', async (_req, res) => {
   } catch (error) {
     return res.status(500).json({ error: 'Failed to fetch leads' });
   }
+});
+
+app.get('*', (req, res) => {
+  if (req.path.startsWith('/api/')) {
+    return res.status(404).json({ error: 'API route not found' });
+  }
+  return res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.listen(PORT, () => {
